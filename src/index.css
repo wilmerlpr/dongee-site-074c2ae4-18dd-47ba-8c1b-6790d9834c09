@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050103;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(80, 7, 36, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(131, 24, 67, 0.15) 0%, transparent 25%);
+}
+
+/* Glassmorphism Erotic */
+.glass-panel {
+  @apply bg-zinc-900/30 backdrop-blur-xl border border-white/5 shadow-2xl shadow-pink-900/10;
+}
+
+.glass-card-hover {
+  @apply hover:bg-pink-900/20 hover:border-pink-500/30 transition-all duration-500 ease-out;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
+
+.input-erotic {
+  @apply w-full bg-zinc-900/50 border border-pink-900/20 rounded-xl px-4 py-3 text-pink-100 placeholder-pink-800/50 focus:outline-none focus:border-pink-500/50 focus:ring-1 focus:ring-pink-500/50 transition-all;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #831843;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
